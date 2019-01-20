@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+	
+	<title>CSS Button Maker</title>
+	
+	<link rel='stylesheet' type='text/css' href='css/style.css' />
+	<link rel='stylesheet' type='text/css' href='css/colorpicker.css' />
+    <link rel='stylesheet' type='text/css' href='css/vader/jquery-ui-1.10.1.custom.min.css' />
+    <link rel='stylesheet' type='text/css' href='css/sunburst.css' />
+<!-- 	<link rel='stylesheet' type='text/css' href='css/sons-of-obsidian.css' /> -->
+
+    <script type='text/javascript' src='js/jquery-1.9.1.min.js'></script>    
+    <script type='text/javascript' src='js/jquery-ui-1.10.1.custom.min.js'></script>
+    <script type='text/javascript' src='js/colorpicker.js'></script>
+    <script type='text/javascript' src='js/buttonmaker.js'></script>
+    <script type='text/javascript' src='js/prettify.js'></script>
+    <script type='text/javascript' src='js/lang-css.js'></script>
+</head>
+
+<body>
+
+    <div id="page-wrap">
+  
+    	<div id="button-box">
+    
+    		<a href="javascript:void(0);" class="button">View the CSS</a>
+    			
+    	</div>
+    	
+    	<div id="controls">
+
+    	    <h1>CSS Button Maker</h1>
+
+                          <div>
+
+            <label for="fontSelector">Font: </label>
+                <select id="fontSelector">
+                    <option selected="seleted" value="Arial, Helvetica, sans-serif" >Arial</option>
+                    <option value="'Arial Black', Gadget, sans-serif">Arial Black</option>
+                    <option value="'Comic Sans MS', cursive, sans-serif">Comic Sans</option>
+                    <option value="Helvetica, Arial, Sans-Serif">Helvetica</option>
+                    <option value="Impact, Charcoal, sans-serif">Impact</option>
+                    <option  value="Georgia, Serif">Georgia</option>
+                    <option value="'Lucida Grande', Helvetica, Arial, Sans-Serif">Lucida Grande</option>
+                    <option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif">Lucida Sans Unicode</option>
+                    <option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif">Lucida Sans Unicode</option>
+                    <option value="'Trebuchet MS', Helvetica, sans-serif">Trebuchet MS</option>
+                    <option value="Verdana, Geneva, sans-serif">Verdana</option>
+                </select>
+            <br/>
+            <br/>
+                          </div>
+                <label>Padding: </label>
+            <div class="sliderBar" id="sizer"></div>
+              <label>Font Size: </label>
+            <div class="sliderBar" id="font-sizer"></div>
+                <label>Border Radius: </label>
+            <div class="sliderBar" id="border-rounder"></div>
+            
+            <div id="colors">
+            
+                <div>
+                    <label for="topGradientValue">Top Gradient Color</label>
+                    <input type="text" maxlength="6" size="6" id="topGradientValue" class="pickable" rel="backgroundTop" value="3e779d" style="background: #3e779d;" />
+                </div>
+                
+                <div>
+                    <label for="bottomGradientValue">Bottom Gradient Color</label>
+                    <input type="text" maxlength="6" size="6" id="bottomGradientValue" class="pickable" rel="backgroundBottom" value="65a9d7" style="background: #65a9d7;" />
+                </div>
+                
+                <div>
+                    <label for="borderTopColorValue">Top Border Color</label>
+                    <input type="text" maxlength="6" size="6" id="borderTopColorValue" class="pickable" rel="borderTopColor" value="96d1f8" style="background: #96d1f8;" />
+                </div>
+                
+                <div>
+                    <label for="hoverBackgroundColorValue">Hover Background Color</label>
+                    <input type="text" maxlength="6" size="6" id="hoverBackgroundColorValue" class="pickable" rel="hoverBackground" value="28597a" style="background: #28597a;" />
+                </div>
+                
+                <div>
+                    <label for="textColor">Text Color</label>
+                    <input type="text" maxlength="6" size="6" id="textColor" class="pickable" rel="textColor" value="white" style="background: white;" />
+                </div>
+                
+                <div>
+                    <label for="hoverTextColorValue">Hover Text Color</label>
+                    <input type="text" maxlength="6" size="6" id="hoverTextColorValue" class="pickable" rel="hoverColor" value="cccccc" style="background: #cccccc;" />
+                </div>
+                
+                <div>
+                    <label for="activeBackgroundColor">Active Background Color</label>
+                    <input type="text" maxlength="6" size="6" id="activeBackgroundColor" class="pickable" rel="activeBackground" value="1b435e" style="background: #1b435e;" />
+                </div>
+            
+            </div>
+
+                
+        </div>
+    	
+	</div>
+	
+    <div id="the-css">
+        <pre id="the-code" class="prettyprint lang-css csscode">
+        </pre>
+    </div>
+
+    <div id="howto" title="How to use this">
+        <p>
+            <h2>How to use this</h2>
+                Create a <code class="prettyprint lang-html">&lt;span&gt;</code> element with the class name <b>button</b>.
+                    <pre class="prettyprint lang-html">
+&lt;span class=&quot;button&quot;&gt;Button&lt;/span&gt;
+                    </pre>
+             <p>
+            Copy the CSS code generated to your css file or styles block. <br/>
+            ex. 
+            </p>
+          <pre class="prettyprint lang-html ">
+&lt;style type=&quot;text/css&quot;&gt;
+<pre class="csscode">
+
+</pre>
+&lt;/style&gt;
+       </pre>
+        </p>
+
+
+    </div>
+
+    
+	
+</body>
+
+</html>
